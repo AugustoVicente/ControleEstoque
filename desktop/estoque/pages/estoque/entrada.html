@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../../css/cadastros.css">
+        <link rel="stylesheet" type="text/css" href="../../css-forms/util.css">
+        <link rel="stylesheet" type="text/css" href="../../css-forms/main.css">
+        <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/styles.css">
+		<title>Entrada de Produtos</title>
+    </head>
+    <body>
+        <div onclick="document.location.href = 'estoques.html';" class="div_voltar">
+            <img class="back_image" src="../../img/back.png" alt="">
+            <p  class="text_voltar">Voltar</p>
+        </div>
+        <br/>
+        <br/>
+        <div class="contact1-form validate-form form_principal">
+            <div class="wrap-input1 validate-input" style="text-align: center">
+                <label id="produto">Produto 1 (marca)</label>
+            </div>
+            <div class="wrap-input1 validate-input item_orcamento">
+                <div class="custom-selected">
+                    <select class="input1" id="lista">
+                        <option value="0" selected disabled>Selecione um fornecedor</option>
+                    </select>
+                </div>
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="number" id="qtd" placeholder="Quantidade de entrada">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="number" id="preco_custo" placeholder="Novo preço de custo">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="number" id="preco_final" placeholder="Novo preço final">
+            </div>
+            <div class="container-contact1-form-btn">
+                <button class="contact1-form-btn" onclick="adiciona_estoque();">
+                    <span>
+                        Adicionar ao estoque
+                    </span>
+                </button>
+            </div>
+            <br/>
+        </div>
+        <script src="utils.js"></script>
+        <script>window.onload = ()=>
+        {
+            pag_entrada_produto();
+            lista2();
+        }
+        </script>
+        <script src="../../js/geral.js"></script>
+    </body>
+    <footer><img src="../../img/Logo.PNG" class="logo"></footer>
+</html>

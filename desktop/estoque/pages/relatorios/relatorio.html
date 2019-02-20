@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../../css/cadastros.css">
+        <link rel="stylesheet" type="text/css" href="../../css-forms/util.css">
+        <link rel="stylesheet" type="text/css" href="../../css-forms/main.css">
+		<link rel="stylesheet" href="../../assets/css/styles.css">
+		<title>Relatórios e Audistorias</title>
+	</head>
+	<body>
+        <div onclick="document.location.href = '../../index.html';" class="div_voltar">
+            <img class="back_image" src="../../img/back.png" alt="">
+            <p  class="text_voltar">Voltar</p>
+        </div>
+		<div>
+			<img src="../../img/Logo.PNG" class="logo">
+		</div>
+		<div>
+            <div class="contact1-form validate-form form_principal">
+                <div class="wrap-input1 validate-input" data-validate="Selecione um fornecedor">
+                    <div class="custom-selected">
+                        <select class="input1" id="filtro">
+                            <option value="0" disabled>Selecione o filtro</option>
+                            <option value="1" selected>Mensal</option>
+                            <option value="2">Anual</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="wrap-input1 validate-input">
+                    <input class="input1" type="month" id="date" placeholder="Filtro">
+                </div>
+                <div class="container-contact1-form-btn">
+                    <button class="contact1-form-btn" onclick="relatorio();">
+                        <span>
+                            Gerar relatório
+                        </span>
+                    </button>
+                </div>
+                <br/>
+                <div class="container-contact1-form-btn">
+                    <button class="contact1-form-btn" onclick="auditoria();">
+                        <span>
+                            Gerar auditoria
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="utils.js"></script>
+	</body>
+</html>

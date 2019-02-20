@@ -1,0 +1,5 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.app.produnox
+electronVersion: 2.0.0

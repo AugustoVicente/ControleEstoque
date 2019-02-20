@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/cadastros.css">
+        <link rel="stylesheet" type="text/css" href="../../../css-forms/util.css">
+        <link rel="stylesheet" type="text/css" href="../../../css-forms/main.css">
+        <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../../assets/css/styles.css">    
+		<title>Alterar Fornecedor</title>
+    </head>
+    <body>
+        <div onclick="document.location.href = 'fornecedores.html';" class="div_voltar">
+            <img class="back_image" src="../../../img/back.png" alt="">
+            <p  class="text_voltar">Voltar</p>
+        </div>
+        <br/>
+        <br/>
+        <div class="contact1-form validate-form form_principal">
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="text" id="razao" placeholder="Razao Social">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="text" id="nome" placeholder="Nome Fantasia">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="text" id="cpf_cnpj" placeholder="CPF/CNPJ">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="text" id="telefone" placeholder="Telefone">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="text" id="contato" placeholder="Contato">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="text" id="email" placeholder="Email">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="text" id="wpp" placeholder="WhatsApp">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="text" id="end" placeholder="Endereço">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="text" id="cep" placeholder="CEP">
+            </div>
+            <div class="wrap-input1 validate-input custom-selected">
+                <select class="input1" id="estado">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="text" id="cidade" placeholder="Cidade">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <button class="contact1-form-btn" onclick="edita();">
+                            <span>
+                                Editar
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <button class="contact1-form-btn" onclick="excluir();">
+                            <span>
+                                Excluir
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <br/>
+        </div>
+        <script src="utils.js"></script>
+        <script src="../../../js/geral.js"></script>
+        <script> 
+            window.onload = function() 
+            {
+                carrega_dados();
+            };
+        </script>
+    </body>
+    <footer><img src="../../../img/Logo.PNG" class="logo"></footer>
+</html>

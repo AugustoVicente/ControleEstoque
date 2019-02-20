@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../../../css-forms/main.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/cadastros.css">
+		<link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../assets/css/styles.css">
+		<title>Produtos</title>
+	</head>
+	<body>
+        <div onclick="document.location.href = '../cadastros.html';" class="div_voltar">
+            <img class="back_image" src="../../../img/back.png" alt="">
+            <p  class="text_voltar">Voltar</p>
+        </div>
+        <div class="container-contact1-form-btn">
+            <button class="contact1-form-btn"  onclick="document.location.href = 'cadastro_produtos_insere.html';">
+                <span>
+                    Novo Produto
+                </span>
+            </button>
+        </div>
+        <br/>
+        <br/>
+        <div class="form-group pull-right">
+            <input type="text" class="search form-control" id="myInput" placeholder="Filtrar Produtos" />
+        </div>
+        <table class="table table-hover table-bordered results" id="myTable" style="text-align: center">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Código de barras</th>
+                    <th>Entrada</th>
+                    <th>Editar</th>
+                    <th>Excluir</th>
+                </tr>
+            </thead>
+            <tbody id="lista">
+            </tbody>
+        </table>
+        <script src="utils.js"></script>
+        <script src="../../../js/geral.js"></script>
+    </body>
+    <footer><img src="../../../img/Logo.PNG" class="logo"></footer>
+</html>

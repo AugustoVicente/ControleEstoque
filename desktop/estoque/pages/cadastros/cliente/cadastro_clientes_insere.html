@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/cadastros.css">
+        <link rel="stylesheet" type="text/css" href="../../../css-forms/util.css">
+        <link rel="stylesheet" type="text/css" href="../../../css-forms/main.css">
+		<title>Cadastro de Clientes</title>
+    </head>
+    <body>
+        <div onclick="document.location.href = 'clientes.html';" class="div_voltar">
+            <img class="back_image" src="../../../img/back.png" alt="">
+            <p  class="text_voltar">Voltar</p>
+        </div>
+        <br/>
+        <br/>
+        <div class="contact1-form validate-form form_principal">
+            <div class="wrap-input1 validate-input" data-validate="O nome é requerido">
+                <input class="input1" type="text" id="nome" placeholder="Nome">
+            </div>
+            <div class="wrap-input1 validate-input" data-validate="O CPF ou CNPJ é requerido">
+                <input class="input1" type="text" id="cpf_cnpj" placeholder="CPF/CNPJ">
+            </div>
+            <div class="wrap-input1 validate-input" data-validate="O telefone é requerido">
+                <input class="input1" type="text" id="telefone" placeholder="Telefone">
+            </div>
+            <div class="wrap-input1 validate-input" data-validate="O contato é requerido">
+                <input class="input1" type="text" id="contato" placeholder="Contato">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="text" id="email" placeholder="Email">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="text" id="wpp" placeholder="WhatsApp">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="text" id="end" placeholder="Endereço">
+            </div>
+            <div class="container-contact1-form-btn">
+                <button class="contact1-form-btn" onclick="cadastra();">
+                    <span>
+                        Cadastrar
+                    </span>
+                </button>
+            </div>
+            <br/>
+        </div>
+        <script src="utils.js"></script>
+        <script src="../../../js/geral.js"></script>
+        <script>window.onload = function() {};</script>
+    </body>
+    <footer><img src="../../../img/Logo.PNG" class="logo"></footer>
+</html>

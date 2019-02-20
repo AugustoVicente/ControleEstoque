@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../../../css-forms/main.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/cadastros.css">
+		<title>Fornecedores</title>
+	</head>
+	<body>
+        <div onclick="document.location.href = '../cadastros.html';" class="div_voltar">
+            <img class="back_image" src="../../../img/back.png" alt="">
+            <p  class="text_voltar">Voltar</p>
+        </div>
+		<div class="itens_existentes header_new_orcamento">
+            <div class="wrap-input1 validate-input item_orcamento">
+                <input class="input1" type="text" id="filtro_fornecedores" placeholder="Filtro">
+            </div>
+            <div class="wrap-input1 validate-input item_orcamento">
+                <div class="custom-selected">
+                    <select class="input1" id="lista">
+                        <option value="0" selected disabled>Selecione um fornecedor</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="container-contact1-form-btn">
+            <button class="contact1-form-btn"  onclick="document.location.href = 'cadastro_fornecedores_insere.html';">
+                <span>
+                    Novo cadastro
+                </span>
+            </button>
+            &nbsp;&nbsp;&nbsp;
+            <button class="contact1-form-btn"  onclick="muda_pagina()">
+                <span>
+                    Selecionar
+                </span>
+            </button>
+        </div>
+        <script src="utils.js"></script>
+        <script src="../../../js/geral.js"></script>
+    </body>
+    <footer><img src="../../../img/Logo.PNG" class="logo"></footer>
+</html>

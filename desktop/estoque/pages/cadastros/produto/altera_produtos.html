@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/cadastros.css">
+        <link rel="stylesheet" type="text/css" href="../../../css-forms/util.css">
+        <link rel="stylesheet" type="text/css" href="../../../css-forms/main.css">
+        <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../assets/css/styles.css">
+		<title>Editar Produto</title>
+    </head>
+    <body>
+        <div onclick="document.location.href = 'produtos.html';" class="div_voltar">
+            <img class="back_image" src="../../../img/back.png" alt="">
+            <p  class="text_voltar">Voltar</p>
+        </div>
+        <br/>
+        <br/>
+        <div class="contact1-form validate-form form_principal">
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="text" id="nome" placeholder="Nome">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="text" id="marca" placeholder="Marca">
+            </div>
+            <div class="wrap-input1 validate-input row" style="text-align: left" id="fornecedores">
+                <div class="col-md-12">
+                    <label>Selecione os fornecedores deste produto:</label>
+                </div>
+                <br/>
+                <br/>
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="number" id="qtd_min" placeholder="Quantidade mínima do estoque">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="text" id="unidade" placeholder="Unidade">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <input class="input1" type="number" id="preco_final" placeholder="Preço final">
+            </div>
+            <div class="wrap-input1 validate-input">
+                <textarea class="input1" id="descricao" placeholder="Descrição"></textarea>
+            </div>
+            <div class="container-contact1-form-btn">
+                <button class="contact1-form-btn" onclick="edita();">
+                    <span>
+                        Salvar
+                    </span>
+                </button>
+            </div>
+            <br/>
+        </div>
+        <script src="utils.js"></script>
+        <script>window.onload = function() 
+            {
+                carrega_dados();
+                carrega_fornencedores_altera();
+            };
+        </script>
+        <script src="../../../js/geral.js"></script>
+    </body>
+    <footer><img src="../../../img/Logo.PNG" class="logo"></footer>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/cadastros.css">
+        <link rel="stylesheet" type="text/css" href="../../../css-forms/util.css">
+        <link rel="stylesheet" type="text/css" href="../../../css-forms/main.css">
+        <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../assets/css/styles.css">
+		<title>Código de barras</title>
+    </head>
+    <body>
+        <div onclick="document.location.href = 'produtos.html';" class="div_voltar">
+            <img class="back_image" src="../../../img/back.png" alt="">
+            <p  class="text_voltar">Voltar</p>
+        </div>
+        <br/>
+        <br/>
+        <div class="contact1-form validate-form form_principal" style="text-align: center">
+            <div class="wrap-input1 validate-input">
+                <label id="produto">Produto 1 (marca)</label>
+            </div>
+            <br/>
+            <br/>
+            <canvas id="barcode" download></canvas>
+            <br/>
+            <br/>
+            <br/>
+            <div class="container-contact1-form-btn">
+                <button class="contact1-form-btn" onclick="imprime_codigo();">
+                    <span>
+                        Imprimir
+                    </span>
+                </button>
+            </div>
+            <br/>
+        </div>
+        <script src="utils.js"></script>
+        <script>window.onload = ()=>
+        {
+            pag_entrada_produto();
+            JsBarcode("#barcode", sessionStorage.getItem("produto"), 
+            {
+                width: 5,
+                height: 40
+            });
+        }
+        </script>
+        <script src="../../../js/geral.js"></script>
+        <script src="../../../js/JsBarcode.all.min.js"></script>
+    </body>
+    <footer><img src="../../../img/Logo.PNG" class="logo"></footer>
+</html>

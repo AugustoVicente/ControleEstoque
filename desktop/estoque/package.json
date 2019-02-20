@@ -1,0 +1,41 @@
+{
+  "name": "estoque",
+  "productName": "Controle de estoque Jeboni",
+  "version": "1.0.0",
+  "description": "Controle de estoque Jeboni",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build",
+    "postinstall": "install-app-deps"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "build": {
+    "appId": "com.app.produnox"
+  },
+  "author": "Augusto Vicente",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-builder": "^20.28.4"
+  },
+  "dependencies": {
+    "@angular/cli": "^6.2.1",
+    "aws-sdk": "^2.315.0",
+    "electron-reload": "^1.2.5",
+    "jquery": "^3.3.1",
+    "mysql": "^2.16.0",
+    "nan": "^2.11.0",
+    "node-pre-gyp": "^0.11.0",
+    "pdfkit2": "^2.0.4",
+    "source": "0.0.3"
+  }
+}

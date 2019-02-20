@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../../css/cadastros.css">
+		<link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../assets/css/styles.css">
+		<title>Histórico de vendas</title>
+	</head>
+	<body>
+        <div onclick="document.location.href = '../../index.html';" class="div_voltar">
+            <img class="back_image" src="../../img/back.png" alt="">
+            <p  class="text_voltar">Voltar</p>
+        </div>
+		<div>
+			<img src="../../img/Logo.PNG" class="logo">
+		</div>
+		<div>
+            <div class="form-group pull-right">
+                <input type="text" class="search form-control" id="myInput" placeholder="Filtrar Compras" /></div>
+                <table class="table table-hover table-bordered results" id="myTable" style="text-align: center">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Total de itens</th>
+                            <th>Valor Final</th>
+                            <th>Desconto Total</th>
+                            <th>Cliente</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="utils.js"></script>
+	</body>
+</html>

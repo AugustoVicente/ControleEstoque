@@ -1,0 +1,8 @@
+version: 1.0.0
+files:
+  - url: estoque-setup-1.0.0.exe
+    sha512: IshZrQSSLdFU2UU6GEKotBTL05GF16owMoVxaJja93+BabELnsadQGVo9TcfwiZIKGtaksGRDi2Sk39mzBkYDw==
+    size: 49299699
+path: estoque-setup-1.0.0.exe
+sha512: IshZrQSSLdFU2UU6GEKotBTL05GF16owMoVxaJja93+BabELnsadQGVo9TcfwiZIKGtaksGRDi2Sk39mzBkYDw==
+releaseDate: '2018-11-09T22:56:12.537Z'

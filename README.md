@@ -1,7 +1,7 @@
-# Plataforma de Controle de estoque
+# Inventory Control Platform
 
-Este projeto visa automatizar o controle de estoque do cliente em questão.
-O projeto é composto de uma aplicação mobile híbrida e uma aplicação PHP em um servidor apache local cujo comunica com o banco de dados MySQL local também.
+**Inventory Control Platform** is a project aimed at automating inventory management for clients.
+The system consists of a hybrid mobile application and a PHP application running on a local Apache server, which communicates with a local MySQL database.
 
 ## Prerequisites
 
